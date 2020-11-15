@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+    background-color:black;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   #todo{
+       width: 350px;
+       margin: 10% auto;
+   }
+
+   input[type=text]{
+       padding: 10px 50px 10px 5px;
+   }
+   .btn{
+       padding:10px;
+       font-weight: bold;
+       box-shadow: .5px .8px .5px gray;
+       color: blue;    
+   }
+   .btn:hover{
+       transform: scale(1.1);
+   }
+   #todo-list{
+       list-style: none;
+       padding-inline-start: 0px;
+       width: 300px;
+   }
+   .delete-btn{
+
+       float: right;
+       color: red;
+   }
+   .list{
+       border-bottom: .1px solid black;
+       margin-bottom:35px;
+   }
+   p{
+       display:flexbox;
+      max-width: 320px;
+   }
+</style>
+<body>
+    
+    <div id="todo">
+        <h1 id="title">Todo List</h1>
+        <input type="text" placeholder="What are your plans for today ?" id="input">
+        <button id="submit-btn" class="btn">Submit</button>
+        <ul id="todo-list">
+            
+        </ul>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
